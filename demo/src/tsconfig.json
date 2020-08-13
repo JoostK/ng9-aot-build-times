@@ -1,9 +1,14 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "../temp",
     "types": [
       "prismjs"
-    ]
-  }
+    ],
+    "noEmit": false,
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictTemplates": false,
+  },
 }
